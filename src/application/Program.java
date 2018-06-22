@@ -10,7 +10,7 @@ public class Program {
 
 		Scanner sc = new Scanner(System.in);
 
-		PrintService ps = new PrintService();
+		PrintService<Integer> ps = new PrintService<>();
 		
 		System.out.print("How many values? ");
 		int n = sc.nextInt();
@@ -21,7 +21,7 @@ public class Program {
 		}
 
 		ps.print();
-		Integer x = (Integer) ps.first();
+		Integer x = ps.first();
 		System.out.println("First: " + x);
 		
 		sc.close();
